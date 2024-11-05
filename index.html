@@ -4,10 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
-        <header></header>
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="logo">
+                        <h2> Fake Store </h2>
+                    </div>
+                    <i class="fa-solid fa-bars menu"></i>
+                    <nav class="nav">
+                        <ul>
+                            <li>
+                                <a class="active" href="#">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">Catogery</a>
+                            </li>
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="auth">
+                        <a href="#" class="login">Log in</a>
+                        <a href="#" class="register">Register</a>
+                    </div>
+                </div>
+            </div>
+        </header>
 
         <main>
             <section class="catogereis">
@@ -17,11 +52,39 @@
                     </div>
                 </div>
             </section>
+            <section class="countdown">
+                <div class="container">
+                    <h2 class="h2">Coming Soon</h2>
+                    <h3>Our first store is opening soon! Stay tuned for the opening</h3>
+                        <div class="countdown-timer">
+                            <div>
+                                <span class="days"">00</span>
+                                <p>  Days</p>
+                            </div>
+                            <div>
+                                <span class="hours">00</span>
+                                <p>  Hours</p>
+                            </div>
+                            <div>
+                                <span  class="minutes">00</span>
+                                <p>  Minutes</p>
+                            </div>
+                            <div>
+                                <span class="seconds"">00</span>
+                                <p>  Seconds</p>
+                            </div>
+                        </div>
+                    </div>
+            </section>
             <section class="products">
                 <div class="container">
-                    <h2>PRODUCTS</h2>
+                    <h2 class="h2">PRODUCTS</h2>
                     <div class="row">
 
+                    </div>
+                    <div class="pagination-container">
+                        <ul class="pagination">
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -29,7 +92,16 @@
         </main>
 
         <footer></footer>
-        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <div class="modal d-none">
+            <div class="img">
+                <i class="fa-regular fa-circle-xmark close-btn"></i>
+                <i class="fa-solid fa-circle-left left-btn"></i>
+                <img src="./assets/img/images.jfif">
+                <i class="fa-solid fa-circle-right right-btn"></i>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
